@@ -1,0 +1,10 @@
+
+http://automationpractice.com/index.php
+
+//textarea[@class='form-control']
+//h3[text()='send a message']
+
+
+http://automationpractice.com/index.php?controller=contact
+
+//img[@alt='My Store']

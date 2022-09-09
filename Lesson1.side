@@ -1,0 +1,139 @@
+{
+  "id": "dc4a3937-c2ce-4062-b2cc-d88e231e4dd9",
+  "version": "2.0",
+  "name": "Lesson1",
+  "url": "http://automationpractice.com",
+  "tests": [{
+    "id": "1a584abc-28f3-49b1-b59a-b2d17a364ea9",
+    "name": "Lesson1",
+    "commands": [{
+      "id": "8ebf97b4-d8f2-4bcf-8480-b29ef5232009",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9391783c-d078-4994-ab0e-19340d62fe23",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e4b5825-359e-498b-b8a8-e7f461e56bd1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact us",
+      "targets": [
+        ["linkText=Contact us", "linkText"],
+        ["css=#contact-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact us')]", "xpath:link"],
+        ["xpath=//div[@id='contact-link']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=contact']", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4b22c32-4b6a-4dc2-bff5-2bd6e1acecfd",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_contact",
+      "targets": [
+        ["id=id_contact", "id"],
+        ["name=id_contact", "name"],
+        ["css=#id_contact", "css:finder"],
+        ["xpath=//select[@id='id_contact']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-id_contact']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8a8c792-24b8-45c1-882c-0b8190abee67",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_contact",
+      "targets": [],
+      "value": "label=Webmaster"
+    }, {
+      "id": "a5ebdf42-a94a-4c94-b920-d4ba5e252dcb",
+      "comment": "",
+      "command": "click",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=message", "name"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//div[@id='center_column']/form/fieldset/div/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c860b7d-47c0-40ed-ba2f-f9a1edc3a5e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=message", "name"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//div[@id='center_column']/form/fieldset/div/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Hello. My name is Mikhail. Testing."
+    }, {
+      "id": "724df9cd-7991-428f-a6e1-967653d4f212",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=from", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='center_column']/form/fieldset/div/div/p[4]/input", "xpath:idRelative"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e725a4c2-c55c-4684-9283-bc7a06c1f94f",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=from", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='center_column']/form/fieldset/div/div/p[4]/input", "xpath:idRelative"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": "mihaspb86@mail.ru"
+    }, {
+      "id": "e7247c45-65bc-42dc-97f3-072dc1af0a5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#submitMessage > span",
+      "targets": [
+        ["css=#submitMessage > span", "css:finder"],
+        ["xpath=//button[@id='submitMessage']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Send')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a7e4777f-2235-4379-be65-56459e4ff240",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1a584abc-28f3-49b1-b59a-b2d17a364ea9"]
+  }],
+  "urls": ["http://automationpractice.com/"],
+  "plugins": []
+}
